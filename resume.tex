@@ -1,0 +1,97 @@
+\documentclass{article}
+\usepackage[a4paper, margin=1.27cm, tmargin=1.91cm, bmargin=1.91cm]{geometry}
+\usepackage{fontspec}
+\usepackage{fontawesome5}
+\usepackage{tabularx}
+\usepackage{hyperref}
+
+
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+
+
+\begin{document}
+
+% font family
+\setmainfont{Calibri}
+% remove page number
+\thispagestyle{empty}
+% disable paragraph indent
+\setlength\parindent{0pt}
+
+% name
+\textbf{\LARGE Shao-Chun Ma}
+
+% current position
+\vspace{4pt}{\small Software Engineer}
+
+% personal information
+\vspace{16pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l l r }
+    \faIcon{envelope} justwhenithought@gmail.com & \faIcon{phone} (+49) 1525-8706794 & \faIcon{map-marker-alt} 13581, Berlin, Germany \\[4pt]
+    \faIcon{linkedin} \url{https://www.linkedin.com/in/shao-chun-ma} & \faIcon{github} \url{https://github.com/cand126}
+\end{tabular*}
+
+% profile
+\section*{Profile}
+
+A Java/Kotlin developer with 5 years experience in backend development, based in Berlin. Have permanent EU residence permit. Work with Kotlin, Spring Boot, RabbitMQ, PostgreSQL on microservice architecture. Have deployment experience on Kubernetes and AWS. Prefer clean code and complete monitoring system.
+
+% employment history
+\section*{Employment History}
+
+\begin{tabularx}{\textwidth}{
+        >{\hsize=0.5\hsize}X
+        >{\hsize=2\hsize}X
+        >{\raggedleft\arraybackslash\hsize=0.5\hsize}X
+    }
+    03.2020 - Now     & \textbf{Software Engineer at SHARE NOW}                                                           & \textit{Berlin} \\[4pt]
+                      & \tabitem Implemented microservices with Kotlin, Java 17, Spring, RabbitMQ, PostgreSQL and MongoDB                   \\
+                      & \tabitem Built simple frontend applications with TypeScript and Vue 2                                               \\
+                      & \tabitem Migrated Kubernetes services and databases from IBM Clould to AWS                                          \\
+                      & \tabitem Analysed and monitored services with ELK, New Relic, Sentry, Prometheus, and Grafana                       \\
+                      & \tabitem Improved CI/CD pipelines in Gitlab, including Helm charts                                                  \\
+                      & \tabitem Defined SLOs and alerting rules, and envolved in the on-call schedule                                      \\
+                      & \tabitem Participated in long-term car sharing in a Scrum team                                                      \\[8pt]
+
+    08.2018 - 02.2020 & \textbf{Junior Fall-Stack Engineer at omni:us}                                                    & \textit{Berlin} \\[4pt]
+                      & \tabitem Developed microservices with Java 8+, Spring, Python 3, Flask                                              \\
+                      & \tabitem Built data pipelines with Apache Airflow                                                                   \\
+                      & \tabitem Helped data scientists to maintain and deploy AI microservices                                             \\
+                      & \tabitem Managed PostgreSQL databases with SQLAlchemy                                                               \\
+                      & \tabitem Extracted data from XML format to JSON format with Java                                                    \\
+                      & \tabitem Provided a research proposal about Apache Kafka                                                            \\
+                      & \tabitem Deployed Docker images with Kubernetes and Helm Charts                                                     \\
+                      & \tabitem Automated CI/CD pipelines with Jenkins                                                                     \\[8pt]
+
+    02.2017 - 12.2017 & \textbf{Web Developer (Student Job) at Lyrehouse}                                                 & \textit{Aachen} \\[4pt]
+                      & \tabitem Contributed to WordPress projects with PHP, MySQL, and Docker                                              \\
+                      & \tabitem Improved the project by refactoring into MVC architecture                                                  \\
+                      & \tabitem Involved in weekly Agile meetings                                                                          \\
+                      & \tabitem Completed several reusable components
+\end{tabularx}
+
+% education
+\section*{Education}
+
+\begin{tabularx}{\textwidth}{
+        >{\hsize=0.5\hsize}X
+        >{\hsize=2\hsize}X
+        >{\raggedleft\arraybackslash\hsize=0.5\hsize}X
+    }
+    09.2016 - 07.2018 & \textbf{RWTH Aachen University}                             & \textit{Aachen}         \\[4pt]
+                      & Master of Science, Software Systems Engineering                                       \\[8pt]
+    09.2011 - 06.2015 & \textbf{National Taiwan University}                         & \textit{Taipei, Taiwan} \\[4pt]
+                      & Bachelor of Business Administration, Information Management
+\end{tabularx}
+
+% skill
+\section*{Skills}
+
+Kotlin, Java, Spring Boot, PostgreSQL, MongoDB, RabbitMQ, Kubernetes, Sentry, ELK, New Relic, JavaScript, Vue
+
+% language
+\section*{Languages}
+
+English, German, Chinese, Japanese
+
+\end{document}
